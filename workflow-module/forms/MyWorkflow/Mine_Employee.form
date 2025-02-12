@@ -73,7 +73,7 @@
                 },
                 {
                     "id": "price",
-                    "type": "integer",
+                    "type": "float",
                     "label": "Price",
                     "readOnly": false,
                     "value": "${context.employeedata.Price}",
