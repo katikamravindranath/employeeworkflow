@@ -1,0 +1,127 @@
+{
+	"contents": {
+		"040a12c8-cacf-4509-bec6-783baecfe641": {
+			"classDefinition": "com.sap.bpm.process.Model",
+			"id": "employeedata1.employeevariant",
+			"template": {
+				"id": "employeedata1"
+			},
+			"type": "PREDEFINED",
+			"businessKey": "",
+			"subject": "Employee Variant",
+			"name": "Employee Variant",
+			"documentation": "Employee Variant",
+			"lastIds": "0c9ab24a-bb36-4f84-a8cd-75fee5a6bc09",
+			"events": {
+				"c909a859-dee1-455f-a02e-073aab4c2f79": {
+					"name": "StartEvent"
+				},
+				"fb27b51b-d810-4fa0-a275-7fb93a2090af": {
+					"name": "EndEvent"
+				}
+			},
+			"activities": {
+				"2813d5ec-47a4-4500-a1ac-b79b09e7eaef": {
+					"name": "MyWorkflow"
+				}
+			},
+			"sequenceFlows": {
+				"a1e0b882-27c3-437a-9b05-bb4c60798eb5": {
+					"name": "SequenceFlow1"
+				},
+				"5f530ade-5388-4c88-bfe5-ffbb9803cc4b": {
+					"name": "SequenceFlow1"
+				}
+			},
+			"diagrams": {
+				"cb40555f-a769-4f9d-9635-e159393cc3aa": {}
+			}
+		},
+		"c909a859-dee1-455f-a02e-073aab4c2f79": {
+			"classDefinition": "com.sap.bpm.process.StartEvent",
+			"id": "startevent1",
+			"name": "StartEvent"
+		},
+		"fb27b51b-d810-4fa0-a275-7fb93a2090af": {
+			"classDefinition": "com.sap.bpm.process.EndEvent",
+			"id": "endevent1",
+			"name": "EndEvent"
+		},
+		"a1e0b882-27c3-437a-9b05-bb4c60798eb5": {
+			"classDefinition": "com.sap.bpm.process.SequenceFlow",
+			"id": "sequenceflow1",
+			"name": "SequenceFlow1",
+			"sourceRef": "c909a859-dee1-455f-a02e-073aab4c2f79",
+			"targetRef": "2813d5ec-47a4-4500-a1ac-b79b09e7eaef"
+		},
+		"cb40555f-a769-4f9d-9635-e159393cc3aa": {
+			"classDefinition": "com.sap.bpm.process.ui.Diagram",
+			"symbols": {
+				"a6adb431-c034-4f56-a24b-e8256c7a9536": {},
+				"0a47b993-ebd4-4768-a537-b2bef70409c4": {},
+				"0a1debc9-3b7c-489e-846a-42e9af8b5685": {},
+				"a3072994-a014-449c-974e-5971b95175be": {},
+				"b674524e-8cda-4317-80ef-9d14ce615271": {}
+			}
+		},
+		"0c9ab24a-bb36-4f84-a8cd-75fee5a6bc09": {
+			"classDefinition": "com.sap.bpm.process.LastIDs",
+			"sequenceflow": 2,
+			"startevent": 1,
+			"endevent": 1,
+			"activity": 1
+		},
+		"a6adb431-c034-4f56-a24b-e8256c7a9536": {
+			"classDefinition": "com.sap.bpm.process.ui.StartEventSymbol",
+			"x": 146,
+			"y": 12,
+			"width": 32,
+			"height": 32,
+			"object": "c909a859-dee1-455f-a02e-073aab4c2f79"
+		},
+		"0a47b993-ebd4-4768-a537-b2bef70409c4": {
+			"classDefinition": "com.sap.bpm.process.ui.EndEventSymbol",
+			"x": 146,
+			"y": 204,
+			"width": 32,
+			"height": 32,
+			"object": "fb27b51b-d810-4fa0-a275-7fb93a2090af"
+		},
+		"0a1debc9-3b7c-489e-846a-42e9af8b5685": {
+			"classDefinition": "com.sap.bpm.process.ui.SequenceFlowSymbol",
+			"points": "162,44 162,94",
+			"sourceSymbol": "a6adb431-c034-4f56-a24b-e8256c7a9536",
+			"targetSymbol": "a3072994-a014-449c-974e-5971b95175be",
+			"object": "a1e0b882-27c3-437a-9b05-bb4c60798eb5"
+		},
+		"2813d5ec-47a4-4500-a1ac-b79b09e7eaef": {
+			"classDefinition": "com.sap.bpm.process.Activity",
+			"stepTypeId": "com.sap.demo.workflow.post.emp.myworkflow",
+			"id": "activity1",
+			"name": "MyWorkflow",
+			"documentation": "Employee Workflow - Post"
+		},
+		"a3072994-a014-449c-974e-5971b95175be": {
+			"classDefinition": "com.sap.bpm.process.ui.ActivitySymbol",
+			"x": 12,
+			"y": 94,
+			"width": 300,
+			"height": 60,
+			"object": "2813d5ec-47a4-4500-a1ac-b79b09e7eaef"
+		},
+		"5f530ade-5388-4c88-bfe5-ffbb9803cc4b": {
+			"classDefinition": "com.sap.bpm.process.SequenceFlow",
+			"id": "sequenceflow2",
+			"name": "SequenceFlow1",
+			"sourceRef": "2813d5ec-47a4-4500-a1ac-b79b09e7eaef",
+			"targetRef": "fb27b51b-d810-4fa0-a275-7fb93a2090af"
+		},
+		"b674524e-8cda-4317-80ef-9d14ce615271": {
+			"classDefinition": "com.sap.bpm.process.ui.SequenceFlowSymbol",
+			"points": "162,154 162,204",
+			"sourceSymbol": "a3072994-a014-449c-974e-5971b95175be",
+			"targetSymbol": "0a47b993-ebd4-4768-a537-b2bef70409c4",
+			"object": "5f530ade-5388-4c88-bfe5-ffbb9803cc4b"
+		}
+	}
+}

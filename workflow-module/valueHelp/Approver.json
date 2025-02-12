@@ -1,0 +1,18 @@
+{
+	"id": "approver",
+	"name": "Approver",
+	"type": "STATIC",
+	"items": [{
+		"value": "Test1",
+		"displayValue": "Test1"
+	}, {
+		"value": "Test2",
+		"displayValue": "Test2"
+	}, {
+		"value": "Test3",
+		"displayValue": "Test3"
+	}, {
+		"value": "Test4",
+		"displayValue": "Test4"
+	}]
+}

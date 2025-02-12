@@ -1,0 +1,63 @@
+{
+	"id": "employeedata1",
+	"name": "Employee Data1",
+	"documentation": "Employee Data1",
+	"contentVersion": "2.0",
+	"stepDefinitions": [{
+		"id": "com.sap.bpm.process.start",
+		"name": "Start",
+		"handlers": {
+			"after": {
+				"reference": "/workflows/MyWorkflow.workflow"
+			}
+		}
+	}, {
+		"reference": "/workflows/MyWorkflow.workflow",
+		"icon": "sap-icon://bbyd-dashboard",
+		"borderColor": "#d58215",
+		"constraints": {
+			"occurrence": {
+				"min": 1,
+				"max": 2
+			}
+		},
+		"inputParameters": [{
+			"id": "approver",
+			"name": "Approver",
+			"documentation": "Approver",
+			"type": "string",
+			"predefinedValue": "Local Manager",
+			"targetVariable": "${context.FirstName}",
+			"valueHelp": {
+				"references": ["/valueHelp/Approver.json"]
+			}
+		}],
+		"outcomes": [{
+			"id": "Response",
+			"name": "Response",
+			"documentation": "Response"
+		}]
+	}, {
+		"id": "com.sap.bpm.process.end",
+		"name": "End",
+		"handlers": {
+			"before": {
+				"reference": "/workflows/MyWorkflow.workflow"
+			}
+		}
+	}],
+	"configurations": {
+		"enablePrincipalPropagation": true
+	},
+	"contextMapping": {
+		"inputContextMapping": [{
+			"sourceExpression": "${context.Count}"
+		}]
+	},
+	"attributes": [{
+		"id": "Name",
+		"label": "Name",
+		"type": "string",
+		"value": "${context.UserName}"
+	}]
+}
