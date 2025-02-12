@@ -16,7 +16,7 @@
                     "type": "integer",
                     "label": "Username",
                     "readOnly": false,
-                    "value": "${context.UserName}",
+                    "value": "${context.employeedata.UserName}",
                     "constraints": {
                         "required": false
                     }
