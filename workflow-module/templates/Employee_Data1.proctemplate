@@ -46,14 +46,14 @@
 	},
 	"contextMapping": {
 		"inputContextMapping": [{
-			"sourceExpression": "${context.Count}"
+			"sourceExpression": "${context.employeedata.Count}"
 		}]
 	},
 	"attributes": [{
 		"id": "Name",
 		"label": "Name",
 		"type": "string",
-		"value": "${context.UserName}"
+		"value": "${context.employeedata.UserName}"
 	}],
 	"sampleContexts": [{
 		"id": "sample",
