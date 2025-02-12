@@ -82,7 +82,7 @@
 		},
 		"5d847979-767e-46dd-90de-c5e196994b33": {
 			"classDefinition": "com.sap.bpm.wfs.UserTask",
-			"subject": "Employee Product Data",
+			"subject": "Employee Product Data ${context.FirstName}",
 			"priority": "MEDIUM",
 			"isHiddenInLogForParticipant": false,
 			"supportsForward": true,
