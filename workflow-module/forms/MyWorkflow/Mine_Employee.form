@@ -1,0 +1,87 @@
+{
+    "id": "mine_employee",
+    "schemaVersion": "1.1.0",
+    "name": "Mine_Employee",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "id",
+            "type": "string",
+            "label": "ID",
+            "readOnly": false,
+            "value": "${context.employeedata.ID}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "name",
+            "type": "string",
+            "label": "Name",
+            "readOnly": false,
+            "value": "${context.employeedata.Name}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "description",
+            "type": "string",
+            "label": "Description",
+            "readOnly": false,
+            "value": "${context.employeedata.Description}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "release_date",
+            "type": "string",
+            "label": "ReleaseDate",
+            "readOnly": false,
+            "value": "${context.employeedata.ReleaseDate}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "discontinueddate",
+            "type": "string",
+            "label": "DiscontinuedDate",
+            "readOnly": false,
+            "value": "${context.employeedata.DiscontinuedDate}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "rating",
+            "type": "string",
+            "label": "Rating",
+            "readOnly": false,
+            "value": "${context.employeedata.Rating}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "price",
+            "type": "integer",
+            "label": "Price",
+            "readOnly": false,
+            "value": "${context.employeedata.Price}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        }
+    ]
+}
