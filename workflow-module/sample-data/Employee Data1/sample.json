@@ -1,0 +1,18 @@
+{
+"Count": 2,
+"UserName": "katikam654",
+"FirstName": "katikam",
+"LastName": "reddy",
+"Emails": ["katikam.reddy@example.com"],
+"Gender": "Male",
+"AddressInfo": [
+  {
+	"Address": "24/5245 Elm Street",
+	"City": {
+	  "Name": "New York",
+	  "CountryRegion": "USA",
+	  "Region": "NY"
+	}
+  }
+]
+}

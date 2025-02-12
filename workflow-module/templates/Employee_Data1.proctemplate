@@ -54,5 +54,9 @@
 		"label": "Name",
 		"type": "string",
 		"value": "${context.UserName}"
+	}],
+	"sampleContexts": [{
+		"id": "sample",
+		"reference": "/sample-data/Employee Data1/sample.json"
 	}]
 }
