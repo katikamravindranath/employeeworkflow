@@ -13,7 +13,7 @@
             "content": [
                 {
                     "id": "id",
-                    "type": "string",
+                    "type": "integer",
                     "label": "ID",
                     "readOnly": false,
                     "value": "${context.employeedata.ID}",
@@ -43,7 +43,7 @@
                 },
                 {
                     "id": "release_date",
-                    "type": "string",
+                    "type": "datetime",
                     "label": "ReleaseDate",
                     "readOnly": false,
                     "value": "${context.employeedata.ReleaseDate}",
@@ -63,7 +63,7 @@
                 },
                 {
                     "id": "rating",
-                    "type": "string",
+                    "type": "integer",
                     "label": "Rating",
                     "readOnly": false,
                     "value": "${context.employeedata.Rating}",
