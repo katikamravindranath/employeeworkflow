@@ -13,7 +13,7 @@
             "content": [
                 {
                     "id": "id",
-                    "type": "integer",
+                    "type": "string",
                     "label": "Username",
                     "readOnly": false,
                     "value": "${context.employeedata.UserName}",
