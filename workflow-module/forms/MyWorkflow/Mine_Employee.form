@@ -43,7 +43,7 @@
                 },
                 {
                     "id": "release_date",
-                    "type": "datetime",
+                    "type": "string",
                     "label": "Address",
                     "readOnly": false,
                     "value": "${context.employeedata.AddressInfo[0].Address}",
