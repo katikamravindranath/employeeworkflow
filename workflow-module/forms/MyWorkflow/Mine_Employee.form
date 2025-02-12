@@ -14,9 +14,9 @@
                 {
                     "id": "id",
                     "type": "integer",
-                    "label": "ID",
+                    "label": "Username",
                     "readOnly": false,
-                    "value": "${context.employeedata.ID}",
+                    "value": "${context.UserName}",
                     "constraints": {
                         "required": false
                     }
@@ -26,7 +26,7 @@
                     "type": "string",
                     "label": "Name",
                     "readOnly": false,
-                    "value": "${context.employeedata.Name}",
+                    "value": "${context.employeedata.FirstName}",
                     "constraints": {
                         "required": false
                     }
@@ -34,9 +34,9 @@
                 {
                     "id": "description",
                     "type": "string",
-                    "label": "Description",
+                    "label": "Gender",
                     "readOnly": false,
-                    "value": "${context.employeedata.Description}",
+                    "value": "${context.employeedata.Gender}",
                     "constraints": {
                         "required": false
                     }
@@ -44,9 +44,9 @@
                 {
                     "id": "release_date",
                     "type": "datetime",
-                    "label": "ReleaseDate",
+                    "label": "Address",
                     "readOnly": false,
-                    "value": "${context.employeedata.ReleaseDate}",
+                    "value": "${context.employeedata.AddressInfo[0].Address}",
                     "constraints": {
                         "required": false
                     }
@@ -54,29 +54,9 @@
                 {
                     "id": "discontinueddate",
                     "type": "string",
-                    "label": "DiscontinuedDate",
+                    "label": "City",
                     "readOnly": false,
-                    "value": "${context.employeedata.DiscontinuedDate}",
-                    "constraints": {
-                        "required": false
-                    }
-                },
-                {
-                    "id": "rating",
-                    "type": "integer",
-                    "label": "Rating",
-                    "readOnly": false,
-                    "value": "${context.employeedata.Rating}",
-                    "constraints": {
-                        "required": false
-                    }
-                },
-                {
-                    "id": "price",
-                    "type": "float",
-                    "label": "Price",
-                    "readOnly": false,
-                    "value": "${context.employeedata.Price}",
+                    "value": "${context.employeedata.AddressInfo[0].City.Name}",
                     "constraints": {
                         "required": false
                     }

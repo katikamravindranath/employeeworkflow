@@ -2,14 +2,23 @@
   "employeedata": 
   
   {
-    "ID": 110,
-    "Name": "Bread",
-    "Description": "Whole grain bread",
-    "ReleaseDate": "1992-01-01T00:00:00",
-    "DiscontinuedDate": null,
-    "Rating": 4,
-    "Price": 2.5
+    "UserName": "katikam",
+    "FirstName": "katikam",
+    "LastName": "reddy",
+    "Emails": ["katikam.reddy@example.com"],
+    "Gender": "Male",
+    "AddressInfo": [
+      {
+        "Address": "24/5 Elm Street",
+        "City": {
+          "Name": "New York",
+          "CountryRegion": "USA",
+          "Region": "NY"
+        }
+      }
+    ]
   },
+  
 
   "businessrule":
 

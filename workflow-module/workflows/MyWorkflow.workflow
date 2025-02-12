@@ -61,9 +61,9 @@
 			"classDefinition": "com.sap.bpm.wfs.ServiceTask",
 			"destination": "Northwind",
 			"destinationSource": "consumer",
-			"path": "/(S(rjwly2ilez0gktt34rv1hsks))/OData/OData.svc//Products",
+			"path": "/TripPinServiceRW/People/",
 			"httpMethod": "POST",
-			"xsrfPath": "/(S(rjwly2ilez0gktt34rv1hsks))/OData/OData.svc/$metadata",
+			"xsrfPath": "/TripPinServiceRW/$metadata",
 			"requestVariable": "${context.employeedata}",
 			"responseVariable": "${context.resultemployee}",
 			"id": "servicetask1",
@@ -79,6 +79,25 @@
 			"responseVariable": "${context.resultbusinessrule}",
 			"id": "servicetask2",
 			"name": "ServiceTask2"
+		},
+		"5d847979-767e-46dd-90de-c5e196994b33": {
+			"classDefinition": "com.sap.bpm.wfs.UserTask",
+			"subject": "Employee Product Data",
+			"priority": "MEDIUM",
+			"isHiddenInLogForParticipant": false,
+			"supportsForward": true,
+			"userInterface": "sapui5://comsapbpmworkflow.comsapbpmwusformplayer/com.sap.bpm.wus.form.player",
+			"recipientUsers": "${context.startedBy}",
+			"formReference": "/forms/MyWorkflow/Mine_Employee.form",
+			"userInterfaceParams": [{
+				"key": "formId",
+				"value": "mine_employee"
+			}, {
+				"key": "formRevision",
+				"value": "1.0"
+			}],
+			"id": "usertask1",
+			"name": "UserTask1"
 		},
 		"c6b99f32-5fe6-4ab6-b60a-80fba1b9ae0f": {
 			"classDefinition": "com.sap.bpm.wfs.SequenceFlow",
@@ -100,6 +119,13 @@
 			"name": "SequenceFlow3",
 			"sourceRef": "450effbb-37a5-4404-9856-b8652dcd9b04",
 			"targetRef": "2798f4e7-bc42-4fad-a248-159095a2f40a"
+		},
+		"1caed9db-c3ec-447c-ac87-af27d0c26b7e": {
+			"classDefinition": "com.sap.bpm.wfs.SequenceFlow",
+			"id": "sequenceflow5",
+			"name": "SequenceFlow5",
+			"sourceRef": "5d847979-767e-46dd-90de-c5e196994b33",
+			"targetRef": "821d7508-beba-48b0-bec5-78a4321d5980"
 		},
 		"42fa7a2d-c526-4a02-b3ba-49b5168ba644": {
 			"classDefinition": "com.sap.bpm.wfs.ui.Diagram",
@@ -173,33 +199,6 @@
 			"targetSymbol": "53e54950-7757-4161-82c9-afa7e86cff2c",
 			"object": "f419a984-db67-4c25-b0ff-c74acf219afe"
 		},
-		"62d7f4ed-4063-4c44-af8b-39050bd44926": {
-			"classDefinition": "com.sap.bpm.wfs.LastIDs",
-			"sequenceflow": 5,
-			"startevent": 1,
-			"endevent": 1,
-			"usertask": 1,
-			"servicetask": 3
-		},
-		"5d847979-767e-46dd-90de-c5e196994b33": {
-			"classDefinition": "com.sap.bpm.wfs.UserTask",
-			"subject": "Employee Product Data",
-			"priority": "MEDIUM",
-			"isHiddenInLogForParticipant": false,
-			"supportsForward": true,
-			"userInterface": "sapui5://comsapbpmworkflow.comsapbpmwusformplayer/com.sap.bpm.wus.form.player",
-			"recipientUsers": "${context.startedBy}",
-			"formReference": "/forms/MyWorkflow/Mine_Employee.form",
-			"userInterfaceParams": [{
-				"key": "formId",
-				"value": "mine_employee"
-			}, {
-				"key": "formRevision",
-				"value": "1.0"
-			}],
-			"id": "usertask1",
-			"name": "UserTask1"
-		},
 		"5691180c-e1b0-4bf5-ae26-6b3ae191a051": {
 			"classDefinition": "com.sap.bpm.wfs.ui.UserTaskSymbol",
 			"x": 12,
@@ -208,19 +207,20 @@
 			"height": 60,
 			"object": "5d847979-767e-46dd-90de-c5e196994b33"
 		},
-		"1caed9db-c3ec-447c-ac87-af27d0c26b7e": {
-			"classDefinition": "com.sap.bpm.wfs.SequenceFlow",
-			"id": "sequenceflow5",
-			"name": "SequenceFlow5",
-			"sourceRef": "5d847979-767e-46dd-90de-c5e196994b33",
-			"targetRef": "821d7508-beba-48b0-bec5-78a4321d5980"
-		},
 		"92da9e87-7a6f-4340-bc8e-7738fcf990c4": {
 			"classDefinition": "com.sap.bpm.wfs.ui.SequenceFlowSymbol",
 			"points": "62,124 62,234",
 			"sourceSymbol": "5691180c-e1b0-4bf5-ae26-6b3ae191a051",
 			"targetSymbol": "6a21dc1b-786a-48e6-9a1f-1f48fd88ecbd",
 			"object": "1caed9db-c3ec-447c-ac87-af27d0c26b7e"
+		},
+		"62d7f4ed-4063-4c44-af8b-39050bd44926": {
+			"classDefinition": "com.sap.bpm.wfs.LastIDs",
+			"sequenceflow": 5,
+			"startevent": 1,
+			"endevent": 1,
+			"usertask": 1,
+			"servicetask": 3
 		}
 	}
 }
