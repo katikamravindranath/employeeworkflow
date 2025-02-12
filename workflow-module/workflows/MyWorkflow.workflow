@@ -63,7 +63,7 @@
 			"destinationSource": "consumer",
 			"path": "/TripPinServiceRW/People/",
 			"httpMethod": "POST",
-			"xsrfPath": "/TripPinServiceRW/$metadata",
+			"xsrfPath": "",
 			"requestVariable": "${context.employeedata}",
 			"responseVariable": "${context.resultemployee}",
 			"id": "servicetask1",
