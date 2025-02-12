@@ -27,7 +27,7 @@
 			"documentation": "Approver",
 			"type": "string",
 			"predefinedValue": "Local Manager",
-			"targetVariable": "${context.FirstName}",
+			"targetVariable": "${context.employeedata.FirstName}",
 			"valueHelp": {
 				"references": ["/valueHelp/Approver.json"]
 			}
