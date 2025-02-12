@@ -87,7 +87,7 @@
 			"isHiddenInLogForParticipant": false,
 			"supportsForward": true,
 			"userInterface": "sapui5://comsapbpmworkflow.comsapbpmwusformplayer/com.sap.bpm.wus.form.player",
-			"recipientUsers": "${context.startedBy}",
+			"recipientUsers": "${info.startedBy}",
 			"formReference": "/forms/MyWorkflow/Mine_Employee.form",
 			"userInterfaceParams": [{
 				"key": "formId",
@@ -164,7 +164,7 @@
 		},
 		"6bb141da-d485-4317-93b8-e17711df4c32": {
 			"classDefinition": "com.sap.bpm.wfs.ui.SequenceFlowSymbol",
-			"points": "62,28 62,124",
+			"points": "62,44 62,94",
 			"sourceSymbol": "df898b52-91e1-4778-baad-2ad9a261d30e",
 			"targetSymbol": "5691180c-e1b0-4bf5-ae26-6b3ae191a051",
 			"object": "c6b99f32-5fe6-4ab6-b60a-80fba1b9ae0f"
@@ -209,7 +209,7 @@
 		},
 		"92da9e87-7a6f-4340-bc8e-7738fcf990c4": {
 			"classDefinition": "com.sap.bpm.wfs.ui.SequenceFlowSymbol",
-			"points": "62,124 62,234",
+			"points": "62,154 62,204",
 			"sourceSymbol": "5691180c-e1b0-4bf5-ae26-6b3ae191a051",
 			"targetSymbol": "6a21dc1b-786a-48e6-9a1f-1f48fd88ecbd",
 			"object": "1caed9db-c3ec-447c-ac87-af27d0c26b7e"
