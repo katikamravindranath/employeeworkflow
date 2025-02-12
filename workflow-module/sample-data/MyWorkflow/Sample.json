@@ -2,14 +2,14 @@
   "employeedata": 
   
   {
-    "UserName": "katikam",
+    "UserName": "katikam654",
     "FirstName": "katikam",
     "LastName": "reddy",
     "Emails": ["katikam.reddy@example.com"],
     "Gender": "Male",
     "AddressInfo": [
       {
-        "Address": "24/5 Elm Street",
+        "Address": "24/5245 Elm Street",
         "City": {
           "Name": "New York",
           "CountryRegion": "USA",
@@ -26,7 +26,7 @@
     "RuleServiceId": "c6f392796d8b028d37f243347eb1bf18",
     "Vocabulary": [
        {
-             "Designation": "A",
+             "Designation": "AM",
              "Name": "Katikam"
        }
     ]
