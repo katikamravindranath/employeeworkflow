@@ -39,12 +39,7 @@
 		}]
 	}, {
 		"id": "com.sap.bpm.process.end",
-		"name": "End",
-		"handlers": {
-			"before": {
-				"reference": "/workflows/MyWorkflow.workflow"
-			}
-		}
+		"name": "End"
 	}],
 	"configurations": {
 		"enablePrincipalPropagation": true
